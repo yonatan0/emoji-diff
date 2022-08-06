@@ -5,6 +5,7 @@ import GameProvider from "./common/context";
 import App from "./App";
 
 const rootElement = document.getElementById("root");
+if (rootElement){
 const root = ReactDOMClient.createRoot(rootElement);
 
 root.render(
@@ -14,3 +15,4 @@ root.render(
     </GameProvider>
   </StrictMode>
 );
+}
